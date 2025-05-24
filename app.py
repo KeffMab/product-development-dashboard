@@ -15,6 +15,7 @@ warnings.filterwarnings('ignore')
 
 # Initialize the Dash app with Bootstrap theme
 app = dash.Dash(__name__,
+ server=app.server               
                 external_stylesheets=[dbc.themes.BOOTSTRAP],
                 suppress_callback_exceptions=True,
                 meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}])
